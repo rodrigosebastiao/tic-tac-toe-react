@@ -1,0 +1,50 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+}
+
+
+body * {
+    box-sizing: border-box;
+}
+
+.Board {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+}
+
+.Board .board-row {
+    margin: 0 auto;
+}
+
+.Board .board-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Board ul {
+    margin: 0;
+    padding: 0;
+}
+
+.Square {
+    border-style: solid;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    width: calc(100% / 3);
+    /* margin: -1px -1px 0 0; */
+    float: left;
+    text-align: center;
+    font-family: cursive;
+    font-size: 0.9em;
+    line-height: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
